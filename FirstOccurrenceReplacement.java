@@ -8,6 +8,7 @@ public class FirstOccurrenceReplacement {
 		String ch = sc.next();
 		System.out.println("Enter the character to replace:");
 		String rep = sc.next();
+		// or you could do inp = inp.replaceFirst(ch, rep); // just remember, replaceFirst() takes a regex as first input and the second as a string
 		System.out.println(inp.replaceFirst(ch, rep));
 	}
 }
