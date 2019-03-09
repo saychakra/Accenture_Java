@@ -9,6 +9,11 @@ public class FirstOccurrenceReplacement {
 		System.out.println("Enter the character to replace:");
 		String rep = sc.next();
 		// or you could do inp = inp.replaceFirst(ch, rep); // just remember, replaceFirst() takes a regex as first input and the second as a string
-		System.out.println(inp.replaceFirst(ch, rep));
+		// checking if the search character is found within the string
+		if (inp.contains(ch)) {
+			System.out.println(inp.replaceFirst(ch, rep));
+		} else {
+			System.out.println("Character not found");
+		}
 	}
 }
